@@ -1,5 +1,6 @@
 import bg from "../assets/images/bg.png";
 import "../index.css";
+import Button from "../componnents/Button";
 
 const word = ["Ideas", "Design", "Concept"];
 const Hero = () => {
@@ -15,26 +16,29 @@ const Hero = () => {
             <div className="flex flex-col gap-7">
               <div className="hero-text">
                 <h1>
-                  make your
+                  Make your
                   <span className="slide">
                     <span className="wrapper">
-                      {word.map((word)=>(
-                        <span 
-                        key={word}
-                        className="flex titems-center md:gap-3 gap-1 pb-2">
+                      {word.map((word) => (
+                        <span
+                          key={word}
+                          className="flex titems-center md:gap-3 gap-1 pb-2"
+                        >
                           {word}
                         </span>
                       ))}
-
                     </span>
                   </span>
-                  
                 </h1>
-                <h1>come to life</h1>
-                
+                <h1>Come to Life</h1>
               </div>
-              <p>Hi, I'm Luca , an ambitious React Develloper </p> 
+              <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+                Hi, I'm Luca , an ambitious React Developer from MADAGASCAR{" "}
+                
+              </p>
+              <Button className="md:w-80 md:h-16 w-60 h-12"  text="See my Work"/>
             </div>
+            
           </header>
         </div>
       </section>

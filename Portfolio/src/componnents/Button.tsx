@@ -1,31 +1,18 @@
-import arrowd from "../assets/images/arrowdown.svg"
-
-
 interface props{
-  className:string
-  text:string
-  
+    text:string
+    className:string
 }
 
-
-
-const Button = ({className,text}:props) => {
+const Button = ({text,className}:props) => {
   return (
-    <>
-    <a className={`${className??''} cta-wrapper`}>
-      <div className="cta-button group">
-        <div className="bg-circle"/>
-        <p className="text">
-          {text}
-        </p>
-        <div className="arrow-wrapper">
-          <img src={arrowd} alt="arrow"  />
+    <a className={ `${className ?? "" } cta-wrapper`}>
+        <div className="cta-button group">
+            <div className="bg-circle"/>
+            <p className="text">{text}</p>
 
         </div>
-      </div>
+
     </a>
-    </>
-    
   )
 }
 

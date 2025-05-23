@@ -337,14 +337,16 @@ section {
 
 @keyframes wordSlider {
   0% {
-    transform: translateY(0.5%);
-  }
- 
-  50% {
-    transform: translateY(-37%);
+    transform: translateY(0%);
   }
 
-  87.5% {
+  
+  50% {
+    transform: translateY(-38%);
+  }
+ 
+ 
+  87% {
     transform: translateY(-70%);
   }
 }

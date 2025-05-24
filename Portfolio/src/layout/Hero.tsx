@@ -1,5 +1,6 @@
 import bg from "../assets/images/bg.png";
 import Button from "../componnents/Button";
+import Hero3d from "../componnents/hero3d";
 const word = ["Concepts", "Ideas", "Design"];
 const Hero = () => {
   return (
@@ -39,8 +40,8 @@ const Hero = () => {
             </div>
           </header>
           {/*right 3d */}
-          <figure className="hero-3d-layout border-1">
-
+          <figure className="hero-3d-layout ">
+                    <Hero3d/>
           </figure>
         </div>
       </section>

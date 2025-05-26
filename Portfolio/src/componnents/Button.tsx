@@ -2,6 +2,7 @@ interface props{
     text:string
     className:string
 }
+import arrowd from "../assets/images/arrowd.svg"
 
 const Button = ({text,className}:props) => {
   return (
@@ -9,7 +10,9 @@ const Button = ({text,className}:props) => {
         <div className="cta-button group">
             <div className="bg-circle"/>
             <p className="text">{text}</p>
-
+            <div className="arrawo-wrapper">
+            <img src={arrowd} alt="arrow" />
+            </div>
         </div>
 
     </a>

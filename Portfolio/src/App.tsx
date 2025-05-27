@@ -1,15 +1,14 @@
 
-import './App.css'
-import Hero from './section/Hero'
+import "./App.css";
+import Hero from "./layout/Hero";
+
+
+
 
 function App() {
-  
-
   return (
-    <>
-      <Hero/>
-    </>
-  )
+    <Hero/>
+  );
 }
 
-export default App
+export default App;

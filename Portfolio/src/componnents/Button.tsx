@@ -10,9 +10,10 @@ const Button = ({text,className}:props) => {
         <div className="cta-button group">
             <div className="bg-circle"/>
             <p className="text">{text}</p>
-            <div className="arrawo-wrapper">
+            <div className="arrow-wrapper">
             <img src={arrowd} alt="arrow" />
             </div>
+            
         </div>
 
     </a>

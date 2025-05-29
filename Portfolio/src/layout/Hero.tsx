@@ -1,8 +1,45 @@
 import bg from "../assets/images/bg.png";
 import Button from "../componnents/Button";
-import Hero3d from "../componnents/hero3d";
+import Hero3d from "../componnents/herocomp/hero3d";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const word = ["Concepts", "Ideas", "Design"];
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo(".hero-text h1",
+      {
+        x:-20 ,
+        opacity:0
+
+      },
+      {
+        x:0 ,
+        opacity:1,
+        stagger:0.5,
+        duration:1,
+        ease:'power2.out'
+
+      }
+    );
+  });
+   useGSAP(() => {
+    gsap.fromTo(".hero-3d-layout ",
+      {
+        
+        opacity:0
+
+      },
+      {
+       
+        opacity:2,
+       
+        duration:1,
+        ease:'power2.in'
+
+      }
+    );
+  });
   return (
     <>
       <section id="hero" className="relative overflow-hidden">
@@ -35,13 +72,14 @@ const Hero = () => {
                 Hi, I'm Luca, an ambitious React developer based in Madgascar
               </p>
               <Button
-              text="See my Work "
-              className="md:w-80 md:h-16 w-60 h-12"/>
+                text="See my Work "
+                className="md:w-80 md:h-16 w-60 h-12"
+              />
             </div>
           </header>
           {/*right 3d */}
           <figure className="hero-3d-layout ">
-                    <Hero3d/>
+            <Hero3d />
           </figure>
         </div>
       </section>

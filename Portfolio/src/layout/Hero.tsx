@@ -44,7 +44,7 @@ const Hero = () => {
     );
   });
   const scroll = () => {
-  const section = document.getElementById("counter");
+  const section = document.getElementById("work");
   section?.scrollIntoView({ behavior: "smooth" });
 };
   return (

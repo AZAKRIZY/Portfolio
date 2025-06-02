@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "host": "vite --host"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.7",
     "react": "^19.1.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
     "react-responsive": "^10.0.1",
     "tailwindcss": "^4.1.7",

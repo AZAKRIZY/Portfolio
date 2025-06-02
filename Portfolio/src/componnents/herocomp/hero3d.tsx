@@ -6,12 +6,12 @@ import HeroLight from "./herolight";
 import { Room } from "./Room";
 
 const Hero3d = () => {
-  const isTablet: boolean = useMediaQuery({ query: "(max-width:1084px)" });
+  
   const isMobile: boolean = useMediaQuery({ query: "(max-width:768px)" });
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 40 }}>
       <OrbitControls
-        enableZoom={!isTablet}
+        enableZoom={false}
         enablePan={false}
         maxDistance={500}
         minDistance={100}

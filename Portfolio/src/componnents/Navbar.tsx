@@ -16,18 +16,16 @@ const navLinks=[
         name:"work",
         link:"#work",
     },
-    {
-        name:"Experience",
-        link:'#experience'
-    },
+  
         {
         name:"Skills",
         link:'#skills'
     },
-        {
-        name:"Experience",
-        link:'#experience'
-    },
+    {
+        name:"Technology",
+        link:"#technology"
+    }
+
 ]
     return (
     

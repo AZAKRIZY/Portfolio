@@ -21,7 +21,7 @@ const abilities=[
 ]
 const FeatureCards = () => {
   return (
-    <div className='w-full padding-x-lg '>
+    <div className='w-full padding-x-lg ' id="skills">
         <div className="mx-auto grid-3-col">
             {abilities.map(({imgpath,title,desc})=>(
                 <div key={title} className="card-border rounded-xl p-8 flex flex-col gap-4">

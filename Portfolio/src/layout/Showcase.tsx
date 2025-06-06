@@ -25,7 +25,12 @@ const Showcase = () => {
     }, 
     {
       opacity:1,
-      duration:1.5
+      duration:1.5,
+      scrollTrigger: {
+        trigger: sectionref.current,
+        start: 'top bottom-=100',
+        toggleActions: "play none none reverse"
+      }
     })
     projects.forEach((card,index)=>{
     gsap.fromTo(
@@ -40,7 +45,8 @@ const Showcase = () => {
         delay:0.3 * (index+1),
         scrollTrigger:{
           trigger:card,
-          start:'top bottom-=100'
+          start:'top bottom-=100',
+          toggleActions: "play none none reverse"
         }
       }
     )

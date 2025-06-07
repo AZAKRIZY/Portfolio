@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/componnents/herocomp/Room.tsx"]
+  "include": ["src", "src/componnents/contactexp/Room.tsx"]
 }

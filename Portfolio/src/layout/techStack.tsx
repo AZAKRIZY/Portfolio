@@ -1,8 +1,9 @@
-import TechStackicons from "../componnents/constants";
+
 import TitleHeader from "../componnents/TItleHeader";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import { TechStackIcons } from "../componnents/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,7 +85,7 @@ const TechStack = () => {
           />
         </div>
         <div className="tech-grid" ref={gridRef}>
-          {TechStackicons.map((icon) => (
+          {TechStackIcons.map((icon) => (
             <div
               key={icon.name}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"

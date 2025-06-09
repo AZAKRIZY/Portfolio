@@ -8,6 +8,7 @@ import { Earth } from "./Earth";
 
 const Hero3d = () => {
   const isMobile: boolean = useMediaQuery({ query: "(max-width:768px)" });
+  
   return (
     <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
       <OrbitControls

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import mangaddict from "../assets/images/mangaddict.png";
-import project2 from "../assets/images/project2.png";
+import Mosary from "../assets/images/Mosary.png"
 import project3 from "../assets/images/project3.png"
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
@@ -10,14 +10,14 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Showcase = () => {
   const sectionref=useRef(null)
-  const mangaddictref=useRef(null)
-  const project2ref=useRef(null)
+  const Mosaryctref=useRef(null)
+  const mangaddictctref=useRef(null)
   const project3ref=useRef(null)
  
 
   
   useGSAP(()=>{
-    const projects=[mangaddictref.current,project2ref.current,project3ref.current]
+    const projects=[Mosaryctref.current,mangaddictctref.current,project3ref.current]
     
 
     gsap.fromTo(sectionref.current, {
@@ -57,31 +57,31 @@ const Showcase = () => {
     <section id="work" ref={sectionref} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          
+          ²
           {/* left*/}
-          <div className="first-project-wrapper" ref={mangaddictref}>
+          <div className="first-project-wrapper" ref={Mosaryctref}>
             <div className="image-wrapper">
               <img
-                src={mangaddict}
-                alt="mangaddict"
+                src={Mosary}
+                alt="Mosary"
                 className=""
               />
             </div>
             <div className="text-content">
               <h2>
-                Mangaddict is manga tracker made by idolazing JIKAN API
+                Mosary is a recipe finder
               </h2>
               <p className="text-white-50 md:tex-xl">
-                An app built in react ,tailwindcss ,load times are fast and and the interface is user friendly 
+                An app built in react ,tailwindcss ,The mealdb as an api,load times are optimized and and the interface is user friendly 
               </p>
             </div>
           </div>
 
           {/* right*/}
           <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={project2ref}>
+            <div className="project" ref={mangaddictctref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src={project2} alt="library management platform" />
+                <img src={mangaddict} alt="library management platform" />
               </div>
               <h2>Library Management Platform</h2>
             </div>

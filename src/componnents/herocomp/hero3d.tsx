@@ -12,7 +12,7 @@ const Hero3d = () => {
   return (
     <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
       <OrbitControls
-        enableZoom={ isMobile?false:true}
+        enableZoom={false}
         enablePan={false}
         maxDistance={15}
         minDistance={3}

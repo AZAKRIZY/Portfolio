@@ -15,7 +15,7 @@ export interface SocialImg {
 // Image imports
 import git from '../assets/images/logos/git.svg';
 import react from '../assets/images/logos/react.png';
-import three from '../assets/images/logos/three.png';
+
 import tailwind from '../assets/images/logos/tailwind.svg';
 import node from '../assets/images/logos/node.png';
 
@@ -28,7 +28,6 @@ export const TechStackIcons: TechStackIcon[] = [
   { name: 'React', image: react, scale: 1, rotation: [0, 0, 0] },
   { name: 'Tailwind CSS', image: tailwind, scale: 1, rotation: [0, 0, 0] },
   { name: 'Git', image: git, scale: 1, rotation: [0, 0, 0] },
-  { name: 'React Three Fiber', image: three, scale: 1, rotation: [0, 0, 0] },
   { name: 'Node.js', image: node, scale: 1, rotation: [0, 0, 0] },
 ];
 

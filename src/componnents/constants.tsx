@@ -29,6 +29,7 @@ export const TechStackIcons: TechStackIcon[] = [
   { name: 'Tailwind CSS', image: tailwind, scale: 1, rotation: [0, 0, 0] },
   { name: 'Git', image: git, scale: 1, rotation: [0, 0, 0] },
   { name: 'Node.js', image: node, scale: 1, rotation: [0, 0, 0] },
+  { name: 'flask', image: 'https://icon.icepanel.io/Technology/png-shadow-512/Flask.png', scale: 1, rotation: [0, 0, 0] },
 ];
 
 export const SocialImgs: SocialImg[] = [

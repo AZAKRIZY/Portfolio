@@ -1,5 +1,5 @@
 import TitleHeader from "../componnents/TItleHeader";
-import ContactExperience from "../componnents/contactexp/ContextExperience";
+
 import arrowd from "../assets/images/arrowd.svg";
 
 const Contact = () => {
@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
               <form
-                
+
                 className="w-full flex flex-col gap-7"
               >
                 <div>
@@ -23,7 +23,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                  
+
                     placeholder="What’s your good name?"
                     required
                   />
@@ -35,7 +35,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    
+
                     placeholder="What’s your email address?"
                     required
                   />
@@ -46,7 +46,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                
+
                     placeholder="How can I help you?"
                     rows={5}
                     required
@@ -57,7 +57,7 @@ const Contact = () => {
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
-                     send
+                      send
                     </p>
                     <div className="arrow-wrapper">
                       <img src={arrowd} alt="arrow" />
@@ -66,19 +66,13 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-            
+
           </div>
-          
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-black w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
-            </div>
-            
-          </div>
-          
+
+
         </div>
       </div>
-      
+
     </section>
   );
 };

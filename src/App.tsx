@@ -2,6 +2,7 @@
 import "./App.css";
 
 import Navbar from "./componnents/Navbar";
+
 import Contact from "./layout/Contact";
 import FeatureCards from "./layout/featureCards";
 import Footer from "./layout/Footer";
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
     <Navbar />
+
     <Hero/>
     <Showcase/>
     <FeatureCards/>

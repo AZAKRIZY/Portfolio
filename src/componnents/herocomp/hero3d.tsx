@@ -11,13 +11,13 @@ const Hero3d = () => {
   
   return (
     <Canvas camera={{ position: [0, 0, 10], fov: 75 }}>
-      <OrbitControls
+      {!isMobile?<OrbitControls
         enableZoom={false}
         enablePan={false}
         maxDistance={15}
         minDistance={3}
         target={[0, 0, 0]}
-      />
+      />:""}
       <HeroLight />
       <group
         scale={isMobile ? 1.5 : 2.5}

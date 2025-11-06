@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
 
+
 const Navbar = () => {
     const [scrolled,setsScrolled]=useState(false);
     useEffect(()=>{
@@ -48,8 +49,9 @@ const navLinks=[
                 <div className="inner">
                     <span>Contact Me</span>
                 </div>
-
+                
             </a>
+            
         </div>
 
     </header>

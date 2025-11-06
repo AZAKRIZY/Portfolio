@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
 }
@@ -10,7 +12,7 @@ body {
   width: 100dvw;
   overflow-x: hidden;
   background-color: black;
-  color: white;
+  color: white ;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
 }
@@ -81,7 +83,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[70vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[70vh] xl:flex md:flex xl:items-center items-start justify-center ;
   }
 
   .hero-text {
@@ -336,6 +338,7 @@ section {
   animation: wordSlider 5s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
+
 @keyframes wordSlider {
   0% {
     transform: translateY(0%);
@@ -351,6 +354,7 @@ section {
     transform: translateY(-70%);
   }
 }
+
 
 /* Hero Text slider ends */
 

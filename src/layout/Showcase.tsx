@@ -83,7 +83,7 @@ const Showcase = () => {
               <div className="image-wrapper bg-[#ffefdb]">
                 <img src={mangaddict} alt="library management platform" />
               </div>
-              <h2>Library Management Platform</h2>
+              <h2>Anime tracker</h2>
             </div>
             <div className="project" ref={project3ref}>
               <div className="image-wrapper bg-amber-100">

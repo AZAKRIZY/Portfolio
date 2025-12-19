@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import mangaddict from "../assets/images/mangaddict.png";
 import Mosary from "../assets/images/Mosary.png";
-import project3 from "../assets/images/project3.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -71,25 +70,25 @@ const Showcase = () => {
               <div className="text-content">
                 <h2>Mosary is a recipe finder</h2>
                 <p className="text-white-50 md:tex-xl">
-                  An app built in react ,tailwindcss ,The mealdb as an api,load
+                  An app built in react ,tailwindcss ,TheMealDB as an api,load
                   times are optimized and and the interface is user friendly
                 </p>
               </div>
             </div>
           </a>
           {/* right*/}
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={mangaddictctref}>
-              <div className="image-wrapper bg-[#ffefdb]">
+          <div className="first-project-wrapper overflow-hidden">
+            <div className="rounded-lg" ref={mangaddictctref}>
+              <div className="image-wrapper ">
                 <img src={mangaddict} alt="library management platform" />
               </div>
-              <h2>Anime tracker</h2>
-            </div>
-            <div className="project" ref={project3ref}>
-              <div className="image-wrapper bg-amber-100">
-                <img src={project3} alt="YC directory" />
+              <div className="text-content">
+                <h2 className="">Mangaddict <span className="bg-red-500/10 border border-red-500/20 text-red-500 text-sm p-3 rounded-lg"> in maintenance</span></h2>
+                <p className="text-white-50 md:text-xl">
+                  Tracks anime all anime ever produced built upon ReactTS using
+                  Jikan API{" "}
+                </p>
               </div>
-              <h2>Startup Showcase App</h2>
             </div>
           </div>
         </div>

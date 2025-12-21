@@ -161,11 +161,11 @@ section {
     @apply w-full mt-10 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
     .showcaselayout {
-      @apply flex xl:flex-row flex-col gap-10 justify-between;
+      @apply flex xl:flex-col flex-col gap-10 justify-between;
     }
 
     .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[60%];
+      @apply h-full flex flex-col justify-between xl:w-full;
 
       .image-wrapper {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative;

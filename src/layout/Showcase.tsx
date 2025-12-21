@@ -61,9 +61,9 @@ const Showcase = () => {
     <section id="work" ref={sectionref} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          ²{/* left*/}
-          <a href="https://mosary.vercel.app/">
+          
             <div className="first-project-wrapper" ref={Mosaryctref}>
+              <a href="https://mosary.vercel.app/">
               <div className="image-wrapper">
                 <img src={Mosary} alt="Mosary" className="" />
               </div>
@@ -74,9 +74,10 @@ const Showcase = () => {
                   times are optimized and and the interface is user friendly
                 </p>
               </div>
+              </a>
             </div>
-          </a>
-          {/* right*/}
+          
+          
           <div className="first-project-wrapper overflow-hidden">
             <div className="rounded-lg" ref={mangaddictctref}>
               <div className="image-wrapper ">
